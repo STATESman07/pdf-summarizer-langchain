@@ -1,44 +1,45 @@
-# pdf-summarizer-langchain
+# Pdf-summarizer-langchain
 A Streamlit web app to summarize PDF documents using Groq-hosted LLMs via LangChain. Supports LLaMA 3, Mixtral, and Gemma models.
 
 
-🦜📄 LLM-Powered PDF Summarizer
+# 🦜📄 LLM-Powered PDF Summarizer
 This Streamlit web app allows users to upload a PDF file and generate a concise summary using LLMs hosted on Groq (like LLaMA 3, Mixtral, and Gemma) via the LangChain framework.
 
-🔍 Features
-Upload and process PDF files of any length
+## 🔍 Features
+- Upload and process PDF files of any length
 
-Automatically split the PDF into manageable chunks
+- Automatically split the PDF into manageable chunks
 
-Generate accurate summaries using map_reduce strategy
+- Generate accurate summaries using map_reduce strategy
 
-Choose from powerful LLMs: llama3-8b-8192, mixtral-8x7b-32768, and gemma-7b-it
+- Choose from powerful LLMs: llama3-8b-8192, mixtral-8x7b-32768, and gemma-7b-it
 
-Secure integration using your own Groq API key
+- Secure integration using your own Groq API key
 
-Simple, elegant user interface built with Streamlit
+- Simple, elegant user interface built with Streamlit
 
-🧠 How It Works
-Upload PDF ➝ The app uses PyPDFLoader to read and split the PDF.
+## 🧠 How It Works
 
-Chunking ➝ Text is split using RecursiveCharacterTextSplitter (chunk size = 1000 chars).
+**Upload PDF** ➝ The app uses PyPDFLoader to read and split the PDF.
 
-Summarization ➝ Each chunk is summarized using a Groq-hosted LLM.
+**Chunking** ➝ Text is split using RecursiveCharacterTextSplitter (chunk size = 1000 chars).
 
-Combining ➝ Individual summaries are merged into a final summary using map_reduce.
+**Summarization** ➝ Each chunk is summarized using a Groq-hosted LLM.
 
-📦 Tech Stack
-Frontend/UI: Streamlit
+**Combining** ➝ Individual summaries are merged into a final summary using map_reduce.
 
-LLM Interface: LangChain
+## 📦 Tech Stack
+### Frontend/UI: Streamlit
 
-Models via Groq: llama3, mixtral, gemma
+### LLM Interface: LangChain
 
-PDF Parsing: PyPDFLoader from LangChain
+### Models via Groq: llama3, mixtral, gemma
 
-🛠️ Installation
+### PDF Parsing: PyPDFLoader from LangChain
+
+
+## 🛠️ Installation
 1. Clone the Repo
-
 git clone https://github.com/yourusername/pdf-summarizer
 cd pdf-summarizer
 
@@ -50,11 +51,13 @@ source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 
 
-Sample requirements.txt:
+### Sample requirements.txt:
 
-streamlit
-langchain
-langchain_groq
-pypdf
+- **streamlit**
 
-pip install faiss-cpu tiktoken
+- **langchain**
+
+- **langchain_groq**
+
+- **pypdf**
+
